@@ -31,7 +31,7 @@ for more details.
 - Clone your forked repository to your computer:
 
 ```bash
-git clone git@github.com:your_user_name/checkstyle.git
+git clone git@github.com:MY_USERNAME/checkstyle.git
 ```
 
 - Before opening project in IDE, build the project in your terminal to download
@@ -215,7 +215,7 @@ git commit -m "Issue #1234: Fixing the issue"
 Run `mvn clean verify` to ensure that your changes have not broken the build and that all tests
 are still passing. If the build does not succeed, carefully read the error messages and try to
 fix the issue. If you are unable to fix the issue, reach out in our
-[Contributors Chat](https://app.element.io/#/room/#checkstyle_checkstyle:gitter.im) or in the
+[Contributors Chat](https://discord.com/channels/845645228467159061/1216455699488313554) or in the
 [Google Group Forum](https://groups.google.com/g/checkstyle-devel) for help.
 
 Push your changes to your forked repository using the following command:
