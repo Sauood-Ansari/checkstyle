@@ -233,6 +233,14 @@ public class IndentationCheckTest extends AbstractModuleTestSupport {
     }
 
     @Test
+    public void testDoubleBraceInitializationFalsePositive() throws Exception {
+        final String[] expected = CommonUtil.EMPTY_STRING_ARRAY;
+        verifyWithInlineConfigParser(
+                getPath("InputIndentationDoubleBraceInit.java"),
+                expected);
+    }
+
+    @Test
     public void testGetAcceptableTokens() {
         final IndentationCheck checkObj = new IndentationCheck();
         final int[] acceptableTokens = checkObj.getAcceptableTokens();
