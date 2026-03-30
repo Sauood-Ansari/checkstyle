@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 https://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+  <head>
+    <title>Importing and debugging in VSCode</title>
+  </head>
+
+  <body>
+    <section name="Content">
+      <macro name="toc">
+        <param name="fromDepth" value="1"/>
+        <param name="toDepth" value="1"/>
+      </macro>
+    </section>
+
+    <section name="Import Checkstyle Project">
+      <p>
+        Open VSCode and use <code>File -&gt; Open Folder</code> to open your local Checkstyle clone.
+      </p>
+      <p>
+        Install recommended extensions:
+      </p>
+      <ul>
+        <li>Extension Pack for Java</li>
+        <li>Maven for Java</li>
+        <li>Debugger for Java</li>
+      </ul>
+    </section>
+
+    <section name="Generate sources">
+      <p>
+        Run from terminal in project root:
+      </p>
+      <div class="wrapper"><pre class="prettyprint"><code class="language-bash">./mvnw -q -DskipTests generate-sources</code></pre></div>
+    </section>
+
+    <section name="Run and debug tests">
+      <p>
+        Open a test class, click <code>Run Test</code> or <code>Debug Test</code> above test method.
+      </p>
+      <p>
+        You can also run tests from terminal:
+      </p>
+      <div class="wrapper"><pre class="prettyprint"><code class="language-bash">./mvnw -Dtest=IndentationCheckTest test</code></pre></div>
+    </section>
+
+    <section name="Formatting and imports">
+      <p>
+        Follow Checkstyle import order and formatting rules used by project configuration.
+      </p>
+    </section>
+  </body>
+</document>
