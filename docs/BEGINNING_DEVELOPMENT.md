@@ -14,6 +14,16 @@ everything you need to do to complete your first pull request.**
 
 ## Before Development
 
+### macOS-specific setup tips
+
+If you are using macOS, these extra setup steps can help avoid common environment issues.
+
+#### Install Java 21
+Use one of the official JDK 21 distributions (Temurin, Oracle, etc.) and confirm:
+
+```bash
+java -version
+javac -version
 - Ensure that Git and Java JDK >= 21 are installed.
 
 You can find information about development environment preparation here:
